@@ -1,0 +1,193 @@
+{
+  "id": "a521343d-b390-4280-bdb8-42f4e55d9616",
+  "version": "2.0",
+  "name": "Parking_Permits_1",
+  "url": "https://hackney.gov.uk/menu/#parking",
+  "tests": [{
+    "id": "38b80569-c8d3-45d2-9dc9-b511522d626b",
+    "name": "Parking_Permits_1",
+    "commands": [{
+      "id": "f9688434-f2a1-461a-b41c-cc7c5a4e1205",
+      "comment": "",
+      "command": "open",
+      "target": "https://hackney.gov.uk/menu/#parking",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ea5e1f1-6ba7-4c2b-b3ae-576e417cb725",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d9ed12c-c3f8-4875-966e-479aebc7750b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Resident parking permits",
+      "targets": [
+        ["linkText=Resident parking permits", "linkText"],
+        ["css=.Menu-module--column--e2tmH:nth-child(2) li:nth-child(2) > .MenuItem-module--listItem--nalkQ", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/main/div/div[2]/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu/#resident-parking-permits')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Resident parking permits')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f00406c8-7436-4cfc-98fb-b91717fabbcb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Menu-module--column--e2tmH:nth-child(3) li:nth-child(1) > .MenuItem-module--listItem--nalkQ",
+      "targets": [
+        ["css=.Menu-module--column--e2tmH:nth-child(3) li:nth-child(1) > .MenuItem-module--listItem--nalkQ", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/main/div/div[2]/div/div[3]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/resident-permits')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae2c43bb-cdc5-454f-977b-34a428494a31",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,411.20001220703125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "011a2690-e387-4a85-8bf8-9fc501b31b3a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Apply or renew now",
+      "targets": [
+        ["linkText=Apply or renew now", "linkText"],
+        ["css=p:nth-child(6) > .fasc-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Apply or renew now')]", "xpath:link"],
+        ["xpath=//div[@id='top']/div/div/div[3]/div[2]/p[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://permits.hackney.gov.uk/')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Apply or renew now')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f61dc9d1-7a9c-4d98-a08e-67cf6bebef60",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c08a70e-d085-40d0-abdd-b0eb7c1d9eaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a365d8c-58f9-4b4b-9990-97814dcc27e9",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6c0bc59-f149-4dca-9b49-7201c34e075c",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19d49121-7562-4ffe-a5d3-023cab387137",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Welcome to Hackney's parking permit system"
+    }, {
+      "id": "b7fc0fb5-4c79-4d8c-89f2-7d0093adf716",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08bdecd6-9b04-47a6-a723-d718237f6ba7",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bc6a336-8fe1-4a09-abe5-77d7119d5ce5",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d278a8e-e7ba-48bc-8dd3-89d5aafb4fa9",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36fe33b6-ca4b-4454-8485-be1d1006b009",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Welcome to Hackney's parking permit system"
+    }]
+  }],
+  "suites": [{
+    "id": "8a7b65dd-e39f-4bbb-a5fc-82b4c992bf4d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["38b80569-c8d3-45d2-9dc9-b511522d626b"]
+  }],
+  "urls": ["https://hackney.gov.uk/menu/#parking"],
+  "plugins": []
+}

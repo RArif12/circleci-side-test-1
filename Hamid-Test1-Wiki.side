@@ -1,0 +1,133 @@
+{
+  "id": "b5cde00f-0296-4e27-af1e-c43e1bd66537",
+  "version": "2.0",
+  "name": "Hamid-Test1-Wiki",
+  "url": "https://en.wikipedia.org",
+  "tests": [{
+    "id": "35e0b726-cd1a-491e-a8bc-d77c1ef8000f",
+    "name": "test1",
+    "commands": [{
+      "id": "9bcbe084-b66f-43b9-b477-a9dcf640b8b8",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Main_Page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54000f1e-7385-46ba-b95e-507a2b7002b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1439x833",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11e99e6a-0c33-410f-9228-856da9ac4bc8",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99c437a8-b573-48d2-97fa-703a1379a33d",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "torrefacto"
+    }, {
+      "id": "67c0d636-271e-48e9-bed3-5c9a8a6342da",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f93e132e-46ff-4f08-a0b3-291cd13c37b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Torrefacto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f6b0fa4-6b57-4d82-9469-b9bb5242f0d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Torrefacto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "911a9bb6-7a2f-454a-925e-251820bff066",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Torrefacto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e185ed35-cd18-4833-b1f5-f6262fbdd4bc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=firstHeading",
+      "targets": [
+        ["id=firstHeading", "id"],
+        ["css=#firstHeading", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Torrefacto')]", "xpath:innerText"]
+      ],
+      "value": "Torrefacto"
+    }]
+  }],
+  "suites": [{
+    "id": "d5c34e2f-80a1-41a8-89b2-dcce3ef5fb9e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["35e0b726-cd1a-491e-a8bc-d77c1ef8000f"]
+  }],
+  "urls": ["https://en.wikipedia.org/"],
+  "plugins": []
+}

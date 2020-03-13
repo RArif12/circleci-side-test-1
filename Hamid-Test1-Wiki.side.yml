@@ -1,0 +1,12 @@
+capabilities:
+    browserName: "Chrome"
+    browser_version: '65.0'
+    os: "Windows"
+    os_version: '8'
+    resolution: '1024x768'
+    name: 'Selenium IDE automate test'
+    browserstack.debug: true
+    browserstack.console: "verbose"
+    browserstack.networkLogs: true
+server: "https://hamidhazrati2:syDBz5MekZxX7Gb7Kqwb@hub-cloud.browserstack.com/wd/hub"
+

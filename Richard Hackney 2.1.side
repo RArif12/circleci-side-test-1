@@ -1,0 +1,557 @@
+{
+  "id": "bfe7191e-5100-4d97-8a85-6bd859677330",
+  "version": "2.0",
+  "name": "Richard Hackney 2",
+  "url": "http://lbhcapconappt01:9090",
+  "tests": [{
+    "id": "f2916f3c-9eb0-49fa-8c45-e00a01103003",
+    "name": "Test 2 one account",
+    "commands": [{
+      "id": "326daecb-2917-4a67-9548-11eed891f243",
+      "comment": "",
+      "command": "open",
+      "target": "/publicaccesstest/selfservice/dashboard.htm",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25b31ddf-97f3-4446-ab90-11c5e4326c58",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1100x664",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ec68a68-2f71-4214-8c3d-9039ebecc6ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in / Register",
+      "targets": [
+        ["linkText=Sign in / Register", "linkText"],
+        ["css=#capita-myprofile-widget-container > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in / Register')]", "xpath:link"],
+        ["xpath=//ul[@id='capita-myprofile-widget-container']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://lbhcapconappt01:9090/publicaccesstest/selfservice/citizenportal/login.htm?redirect_url=http://lbhcapconappt01:9090/publicaccesstest/selfservice/dashboard.htm']", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in / Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14424d3d-a0d0-4f4c-9f11-19f8420fc884",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Housing",
+      "targets": [
+        ["linkText=Housing", "linkText"],
+        ["css=.jstAutoHS_hidden_show_hide li:nth-child(8) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Housing')])[2]", "xpath:link"],
+        ["xpath=//div[@id='extWidth']/div[2]/div/div/div/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.hackney.gov.uk/housing.htm')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fedf33a-586f-4ebe-8415-3091bae4ada4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Housing",
+      "targets": [
+        ["linkText=Housing", "linkText"],
+        ["css=.jstAutoHS_hidden_show_hide li:nth-child(8) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Housing')])[2]", "xpath:link"],
+        ["xpath=//div[@id='extWidth']/div[2]/div/div/div/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.hackney.gov.uk/housing.htm')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "926e6877-cf8c-4fc5-839d-0647883c09a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Housing options and advice",
+      "targets": [
+        ["linkText=Housing options and advice", "linkText"],
+        ["css=.Menu-module--column--e2tmH:nth-child(2) li:nth-child(9) > .MenuItem-module--listItem--nalkQ", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/main/div/div[2]/div/div[2]/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu/#housing-options-and-advice')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Housing options and advice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64ad5ece-0216-4b1c-9919-2e3ecc93c9fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Menu-module--column--e2tmH:nth-child(3) li:nth-child(1) > .MenuItem-module--listItem--nalkQ",
+      "targets": [
+        ["css=.Menu-module--column--e2tmH:nth-child(3) li:nth-child(1) > .MenuItem-module--listItem--nalkQ", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/main/div/div[2]/div/div[3]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/housing-options')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4eec2c17-5780-4059-be0b-a485f80a6896",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,408.6666564941406)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6689986-e1ec-4a5e-a22b-af903efc500c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=joining the housing register",
+      "targets": [
+        ["linkText=joining the housing register", "linkText"],
+        ["css=p:nth-child(13) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'joining the housing register')]", "xpath:link"],
+        ["xpath=//div[@id='top']/div/div/div[3]/div/div/p[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://hackney.gov.uk/housing-application')]", "xpath:href"],
+        ["xpath=//p[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'joining the housing register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9085fa60-b481-422a-a5fe-8afb226dab4d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Join the register",
+      "targets": [
+        ["linkText=Join the register", "linkText"],
+        ["css=.fasc-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Join the register')]", "xpath:link"],
+        ["xpath=//div[@id='top']/div/div/div[3]/div/p[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myaccount.hackney.gov.uk/HousingRegister/?token=424f4bd0c3c64ca02391b715c9c17b94ef67cd4ae0664f67080e5bbea27376c1&wsError=false')]", "xpath:href"],
+        ["xpath=//p[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join the register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b7af607-8903-4217-9400-8a2cdecefa9a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Join the register",
+      "targets": [
+        ["linkText=Join the register", "linkText"],
+        ["css=.fasc-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Join the register')]", "xpath:link"],
+        ["xpath=//div[@id='top']/div/div/div[3]/div/p[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myaccount.hackney.gov.uk/HousingRegister/?token=424f4bd0c3c64ca02391b715c9c17b94ef67cd4ae0664f67080e5bbea27376c1&wsError=false')]", "xpath:href"],
+        ["xpath=//p[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join the register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd4a262c-6340-4b85-a706-89f4490be87b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Join the register",
+      "targets": [
+        ["linkText=Join the register", "linkText"],
+        ["css=.fasc-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Join the register')]", "xpath:link"],
+        ["xpath=//div[@id='top']/div/div/div[3]/div/p[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myaccount.hackney.gov.uk/HousingRegister/?token=424f4bd0c3c64ca02391b715c9c17b94ef67cd4ae0664f67080e5bbea27376c1&wsError=false')]", "xpath:href"],
+        ["xpath=//p[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join the register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8906bbb8-d2cc-477f-9d51-47983f7e2132",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "linkText=Join the register",
+      "targets": [
+        ["linkText=Join the register", "linkText"],
+        ["css=.fasc-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Join the register')]", "xpath:link"],
+        ["xpath=//div[@id='top']/div/div/div[3]/div/p[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myaccount.hackney.gov.uk/HousingRegister/?token=424f4bd0c3c64ca02391b715c9c17b94ef67cd4ae0664f67080e5bbea27376c1&wsError=false')]", "xpath:href"],
+        ["xpath=//p[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join the register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8197ff53-03db-4aa8-840c-dae9c40e361d",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "richard.austin@hackney.gov.uk"
+    }, {
+      "id": "67292b72-119e-4eb8-b1c3-a7facbe6ad76",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eab398cc-007a-423c-b7db-5fe35d021fe4",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Hackney2020!#"
+    }, {
+      "id": "89f891c6-962f-45fe-8911-83f626114e92",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "abb44ad8-7dd3-4618-a58a-1497def9e120",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a848e51-a4c2-443c-8297-7b517fe6b05e",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Hackney2020!"
+    }, {
+      "id": "8038dcb1-c852-4d2a-a2f3-eece603543ce",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.govuk-button", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc6f7190-9ddc-4d8a-9b7d-0fb0d93cf3cd",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "richard.austin@hackney.gov.uk"
+    }, {
+      "id": "338d9cf6-d42b-4c1e-aa54-eabb94ccbeca",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Hackney2020!"
+    }, {
+      "id": "cadaed14-4224-4f18-93c2-8ed294332187",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f792c3e5-5868-4888-8303-5a08acf5c15e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(9) .btn",
+      "targets": [
+        ["css=.row:nth-child(9) .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Add service')])[2]", "xpath:link"],
+        ["xpath=//div[@id='myservice_modules']/div[8]/div/form/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/publicaccesstest/selfservice/citizenportal/selectservices.htm')])[2]", "xpath:href"],
+        ["xpath=//div[8]/div/form/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9df2f523-1e4b-4404-a1a7-910cd7ceca88",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Housing",
+      "targets": [
+        ["linkText=Housing", "linkText"],
+        ["css=.jstAutoHS_hidden_show_hide li:nth-child(8) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Housing')])[2]", "xpath:link"],
+        ["xpath=//div[@id='extWidth']/div[2]/div/div/div/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.hackney.gov.uk/housing.htm')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4016d1db-370f-4314-99e5-3c8f18cd8b26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Button-module--button--2X_Ir",
+      "targets": [
+        ["css=.Button-module--button--2X_Ir", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Accept and close')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a02cf0bb-c85b-4710-8e26-30a8b8177b22",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Housing options and advice",
+      "targets": [
+        ["linkText=Housing options and advice", "linkText"],
+        ["css=.Menu-module--column--e2tmH:nth-child(2) li:nth-child(9) > .MenuItem-module--listItem--nalkQ", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/main/div/div[2]/div/div[2]/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/menu/#housing-options-and-advice')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Housing options and advice')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38ade6d8-7224-4172-9618-478c21527705",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Menu-module--column--e2tmH:nth-child(3) li:nth-child(1) > .MenuItem-module--listItem--nalkQ",
+      "targets": [
+        ["css=.Menu-module--column--e2tmH:nth-child(3) li:nth-child(1) > .MenuItem-module--listItem--nalkQ", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/main/div/div[2]/div/div[3]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/housing-options')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0734544c-7140-4500-9def-e9f4d3da1124",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,402)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "479e64f4-9078-49db-80e5-fe4f8da49056",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=social housing in Hackney",
+      "targets": [
+        ["linkText=social housing in Hackney", "linkText"],
+        ["css=.inlinemedia", "css:finder"],
+        ["xpath=//a[contains(text(),'social housing in Hackney')]", "xpath:link"],
+        ["xpath=//div[@id='top']/div/div/div[3]/div/div/ul[3]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://drive.google.com/open?id=19mEXHHlMFWs5r9j-k94Tfkaae0W6VloE')]", "xpath:href"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'social housing in Hackney')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7634",
+      "windowTimeout": 2000
+    }, {
+      "id": "21c6f7f2-77ec-4bf6-a050-52eee06e168f",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "894a1e16-7e4c-46fc-b1f0-581862ca4885",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7634}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a30c7031-f052-4ac5-a672-4db11f8d6ab4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bd7a918-c860-426c-bff5-efa7de368ca3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3304ac51-a39b-46bc-a3a8-f7a224f78b3c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4617588c-ca52-49a6-a242-95df653a052d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58605785-cc9a-4b72-b529-995cf3c97147",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30297f54-89e7-417a-bec5-3438c53e9f4b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c4ed294-d22d-4ebd-aa13-0b1f445fba10",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "627b6b10-0f0d-49ea-9c9c-a72fb768eb21",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=joining the housing register",
+      "targets": [
+        ["linkText=joining the housing register", "linkText"],
+        ["css=p:nth-child(13) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'joining the housing register')]", "xpath:link"],
+        ["xpath=//div[@id='top']/div/div/div[3]/div/div/p[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://hackney.gov.uk/housing-application')]", "xpath:href"],
+        ["xpath=//p[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'joining the housing register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e334449-660a-430e-92fa-af36560ef4d7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,410)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe671233-5dde-473c-a34d-2d8d6cf16f78",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Join the register",
+      "targets": [
+        ["linkText=Join the register", "linkText"],
+        ["css=.fasc-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Join the register')]", "xpath:link"],
+        ["xpath=//div[@id='top']/div/div/div[3]/div/p[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myaccount.hackney.gov.uk/HousingRegister/?token=424f4bd0c3c64ca02391b715c9c17b94ef67cd4ae0664f67080e5bbea27376c1&wsError=false')]", "xpath:href"],
+        ["xpath=//p[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join the register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b76e5ab-24c1-402e-8f28-72ad024afbc6",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "richard.austin@hackney.gov.uk"
+    }, {
+      "id": "a3a84807-f370-4075-bd77-5a2b0f2311e7",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Hackney2020!"
+    }, {
+      "id": "5fe1d62b-b88d-402a-a187-1f27e8fc82a9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=user_password",
+      "targets": [
+        ["id=user_password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#user_password", "css:finder"],
+        ["xpath=//input[@id='user_password']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "c42b4c27-96ea-4c18-a3ff-a600b71d69c8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f2916f3c-9eb0-49fa-8c45-e00a01103003"]
+  }],
+  "urls": ["http://lbhcapconappt01:9090/"],
+  "plugins": []
+}

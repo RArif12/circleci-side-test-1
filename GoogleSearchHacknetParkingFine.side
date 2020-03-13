@@ -1,0 +1,94 @@
+{
+  "id": "61dc2bf6-0f91-4d0b-9d14-983174083167",
+  "version": "2.0",
+  "name": "example test 2",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "dd40739b-71f0-447f-b239-8c7c01607e66",
+    "name": "Google 1",
+    "commands": [{
+      "id": "4eae1385-7c94-43ec-8ccf-bd4a9f40a27d",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9b88682-ea64-4d65-99dd-5946b6d52117",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "hackney council"
+    }, {
+      "id": "52c5e130-46ac-4344-ad3f-50108ed78fe9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e9cff00c-2f93-4916-b987-0815cdf3b856",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .rc .LC20lb",
+      "targets": [
+        ["css=div:nth-child(2) > .rc .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Hackney Council')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f651c92-70ba-41bc-bea2-490b7ed07590",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pay a parking fine",
+      "targets": [
+        ["linkText=Pay a parking fine", "linkText"],
+        ["css=.Hero-module--heroBoxListItem--wmBh_:nth-child(1) > .Hero-module--heroBoxListItemLink--RbVwx", "css:finder"],
+        ["xpath=//a[contains(text(),'Pay a parking fine')]", "xpath:link"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/main/div/div[2]/div/div/div/div/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.hackney.gov.uk/parking-fines')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pay a parking fine')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d3df903-0fdb-4999-85bc-73ba08b176a1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='top']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Parking fines')]", "xpath:innerText"]
+      ],
+      "value": "Parking fines"
+    }, {
+      "id": "28e11427-4e0d-4240-9144-3fa332749763",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d8b2c4fa-5a71-438c-97ff-6da1027e8e71",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dd40739b-71f0-447f-b239-8c7c01607e66"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

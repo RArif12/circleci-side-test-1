@@ -1,0 +1,13 @@
+{
+  "name": "side",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "selenium-side-runner --config Hamid-Test1-Wiki.side.yml ~/Downloads/Parking_Permits_0.side",
+    "test0": "selenium-side-runner  ~/Downloads/google.side"
+  },
+  "keywords": [],
+  "author": "Hamid Hazrati <hamid.hazrati@hmcts.net> (https://www.gov.uk/government/organisations/hm-courts-and-tribunals-service)",
+  "license": "ISC"
+}
