@@ -1,10 +1,14 @@
 version: 2
 jobs:
   build:
+    docker:
+      - image: circleci/node:4.8.2-jessie
     steps:
       - checkout
       - run: npm install
   test:
+    docker:
+      - image: circleci/node:4.8.2-jessie
     steps:
       - checkout
       - run: npm test
