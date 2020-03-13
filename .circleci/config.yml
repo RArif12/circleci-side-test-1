@@ -10,7 +10,10 @@ jobs:
     docker:
       - image: buildpack-deps:trusty
     steps:
-      - checkout
+      - checkout # special step to check out source code to working directory
+      - run:
+          name: update-npm
+          command: 'sudo npm install -g npm@latest'
       - run: npm test
 workflows:
   version: 2
