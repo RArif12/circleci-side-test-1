@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "selenium-side-runner --config Hamid-Test1-Wiki.side.yml ~/Downloads/Parking_Permits_0.side",
+    "test": "selenium-side-runner --config Hamid-Test1-Wiki.side.yml Parking_Permits_1.side",
     "test0": "selenium-side-runner  ~/Downloads/google.side"
   },
   "keywords": [],

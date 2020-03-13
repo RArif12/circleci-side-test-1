@@ -1,193 +1,627 @@
 {
-  "id": "a521343d-b390-4280-bdb8-42f4e55d9616",
+  "id": "d9644861-be7e-4cd7-83e4-2a7f43ff77e7",
   "version": "2.0",
   "name": "Parking_Permits_1",
-  "url": "https://hackney.gov.uk/menu/#parking",
+  "url": "https://hackney-staging-permits.farthestgate.co.uk/",
   "tests": [{
-    "id": "38b80569-c8d3-45d2-9dc9-b511522d626b",
+    "id": "3780e742-ac5e-4a96-bb3f-f58e69e54f98",
     "name": "Parking_Permits_1",
     "commands": [{
-      "id": "f9688434-f2a1-461a-b41c-cc7c5a4e1205",
+      "id": "161c46f8-cb07-4106-ab95-b98db22cf497",
       "comment": "",
       "command": "open",
-      "target": "https://hackney.gov.uk/menu/#parking",
+      "target": "https://hackney-staging-permits.farthestgate.co.uk/",
       "targets": [],
       "value": ""
     }, {
-      "id": "3ea5e1f1-6ba7-4c2b-b3ae-576e417cb725",
+      "id": "827696d3-3f24-48f3-b995-e4975c28b708",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1536x864",
+      "target": "1920x1080",
       "targets": [],
       "value": ""
     }, {
-      "id": "3d9ed12c-c3f8-4875-966e-479aebc7750b",
+      "id": "18fc0835-a7a2-48b5-b762-2e55c4ba95c8",
       "comment": "",
       "command": "click",
-      "target": "linkText=Resident parking permits",
+      "target": "linkText=Apply now online",
       "targets": [
-        ["linkText=Resident parking permits", "linkText"],
-        ["css=.Menu-module--column--e2tmH:nth-child(2) li:nth-child(2) > .MenuItem-module--listItem--nalkQ", "css:finder"],
-        ["xpath=//div[@id='gatsby-focus-wrapper']/main/div/div[2]/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/menu/#resident-parking-permits')]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Resident parking permits')]", "xpath:innerText"]
+        ["linkText=Apply now online", "linkText"],
+        ["css=.apply-now-btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Apply now online')]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/control/permitsHackneyClear')]", "xpath:href"],
+        ["xpath=//div[6]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Apply now online')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "f00406c8-7436-4cfc-98fb-b91717fabbcb",
+      "id": "52b04664-c16d-4e6f-946b-1b605d5f109e",
       "comment": "",
       "command": "click",
-      "target": "css=.Menu-module--column--e2tmH:nth-child(3) li:nth-child(1) > .MenuItem-module--listItem--nalkQ",
+      "target": "id=RESIDENT",
       "targets": [
-        ["css=.Menu-module--column--e2tmH:nth-child(3) li:nth-child(1) > .MenuItem-module--listItem--nalkQ", "css:finder"],
-        ["xpath=//div[@id='gatsby-focus-wrapper']/main/div/div[2]/div/div[3]/ul/li/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/resident-permits')]", "xpath:href"],
-        ["xpath=//div[3]/ul/li/a", "xpath:position"]
+        ["css=#RESIDENT .data-bg", "css:finder"],
+        ["xpath=//div[@id='RESIDENT']/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/div", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "ae2c43bb-cdc5-454f-977b-34a428494a31",
+      "id": "e2441283-ba6c-45b6-a441-ca99e20e6d4c",
       "comment": "",
-      "command": "runScript",
-      "target": "window.scrollTo(0,411.20001220703125)",
+      "command": "click",
+      "target": "id=continuebtn",
+      "targets": [
+        ["id=continuebtn", "id"],
+        ["linkText=Continue", "linkText"],
+        ["css=#permitDiv > #continuebtn", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue')]", "xpath:link"],
+        ["xpath=//a[@id='continuebtn']", "xpath:attributes"],
+        ["xpath=//div[@id='permitDiv']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[17]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2c646cf-7fb6-4bd4-9b85-6d02c1ed790b",
+      "comment": "",
+      "command": "type",
+      "target": "id=POSTCODE",
+      "targets": [
+        ["id=POSTCODE", "id"],
+        ["name=CUSTOMER_POSTAL_CODE", "name"],
+        ["css=#POSTCODE", "css:finder"],
+        ["xpath=//input[@id='POSTCODE']", "xpath:attributes"],
+        ["xpath=//div[@id='permitHousePostCode']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "E8 1DT"
+    }, {
+      "id": "d6e68492-3699-4718-bb74-f80ef9a2a892",
+      "comment": "",
+      "command": "click",
+      "target": "css=.box-1",
+      "targets": [
+        ["css=.box-1", "css:finder"],
+        ["xpath=//div[@id='permitAddressForm']/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3238b31-395c-454e-99cc-641f27c1e31a",
+      "comment": "",
+      "command": "click",
+      "target": "id=getAddress",
+      "targets": [
+        ["id=getAddress", "id"],
+        ["linkText=Look up address", "linkText"],
+        ["css=#getAddress", "css:finder"],
+        ["xpath=//a[contains(text(),'Look up address')]", "xpath:link"],
+        ["xpath=//a[@id='getAddress']", "xpath:attributes"],
+        ["xpath=//div[@id='permitAddressForm']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Look up address')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a4f02e4-02b0-4a17-a82e-001439e8e922",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addressGrid:nth-child(4)",
+      "targets": [
+        ["css=.addressGrid:nth-child(4)", "css:finder"],
+        ["xpath=(//p[@onclick='fillLlpgAddress(this);setZcode(this)'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='resultDataSet']/p[4]", "xpath:idRelative"],
+        ["xpath=//p[4]", "xpath:position"],
+        ["xpath=//p[contains(.,'FLAT 4, 40 FLORFIELD ROAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65bd65b2-28b5-441a-a247-25c5ce88fef0",
+      "comment": "",
+      "command": "click",
+      "target": "id=cfrmDetails",
+      "targets": [
+        ["id=cfrmDetails", "id"],
+        ["linkText=Continue to personal details", "linkText"],
+        ["name=cfrmDetails", "name"],
+        ["css=#cfrmDetails", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue to personal details')]", "xpath:link"],
+        ["xpath=//a[@id='cfrmDetails']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[5]", "xpath:href"],
+        ["xpath=//div[2]/div/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue to personal details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "344318e4-fb94-4bca-a8c0-eb74c9c7cac1",
+      "comment": "",
+      "command": "click",
+      "target": "id=USER_TITLE",
+      "targets": [
+        ["id=USER_TITLE", "id"],
+        ["name=USER_TITLE", "name"],
+        ["css=#USER_TITLE", "css:finder"],
+        ["xpath=//select[@id='USER_TITLE']", "xpath:attributes"],
+        ["xpath=//form[@id='personalForm']/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select Title\nMr\nMrs\nMs\nDr\nMx')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "492e69ac-437f-491c-9f51-6efec5a9b9a3",
+      "comment": "",
+      "command": "select",
+      "target": "id=USER_TITLE",
+      "targets": [],
+      "value": "label=Mr"
+    }, {
+      "id": "e6577e03-bfed-454c-80df-2490de0df88a",
+      "comment": "",
+      "command": "click",
+      "target": "id=USER_TITLE",
+      "targets": [
+        ["id=USER_TITLE", "id"],
+        ["name=USER_TITLE", "name"],
+        ["css=#USER_TITLE", "css:finder"],
+        ["xpath=//select[@id='USER_TITLE']", "xpath:attributes"],
+        ["xpath=//form[@id='personalForm']/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Select Title\nMr\nMrs\nMs\nDr\nMx')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e8fced8-6a46-491f-988b-c27a6eac21e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=USER_FIRST_NAME",
+      "targets": [
+        ["id=USER_FIRST_NAME", "id"],
+        ["name=USER_FIRST_NAME", "name"],
+        ["css=#USER_FIRST_NAME", "css:finder"],
+        ["xpath=//input[@id='USER_FIRST_NAME']", "xpath:attributes"],
+        ["xpath=//form[@id='personalForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25b43d07-9e67-4ce8-be9e-dddd05294eb4",
+      "comment": "",
+      "command": "type",
+      "target": "id=USER_FIRST_NAME",
+      "targets": [
+        ["id=USER_FIRST_NAME", "id"],
+        ["name=USER_FIRST_NAME", "name"],
+        ["css=#USER_FIRST_NAME", "css:finder"],
+        ["xpath=//input[@id='USER_FIRST_NAME']", "xpath:attributes"],
+        ["xpath=//form[@id='personalForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "TestAT"
+    }, {
+      "id": "0d115e92-b69e-4ba8-84c9-60e89c075f8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=USER_LAST_NAME",
+      "targets": [
+        ["id=USER_LAST_NAME", "id"],
+        ["name=USER_LAST_NAME", "name"],
+        ["css=#USER_LAST_NAME", "css:finder"],
+        ["xpath=//input[@id='USER_LAST_NAME']", "xpath:attributes"],
+        ["xpath=//form[@id='personalForm']/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "ATTest"
+    }, {
+      "id": "8a178f20-2c6a-4da9-bc0a-ad51e9b3876f",
+      "comment": "",
+      "command": "type",
+      "target": "id=CUSTOMER_HOME_CONTACT",
+      "targets": [],
+      "value": "7777"
+    }, {
+      "id": "be645acf-4f03-4fcc-bcbb-86af625ed2d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=CUSTOMER_MOBILE_CONTACT",
+      "targets": [
+        ["id=CUSTOMER_MOBILE_CONTACT", "id"],
+        ["name=CUSTOMER_MOBILE_CONTACT", "name"],
+        ["css=#CUSTOMER_MOBILE_CONTACT", "css:finder"],
+        ["xpath=//input[@id='CUSTOMER_MOBILE_CONTACT']", "xpath:attributes"],
+        ["xpath=//form[@id='personalForm']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1111"
+    }, {
+      "id": "9f2d2dc8-f7b9-44ac-bf81-41fe4bacd2b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=USER_BIRTHDATE_PICKER",
+      "targets": [
+        ["id=USER_BIRTHDATE_PICKER", "id"],
+        ["name=USER_BIRTHDATE_PICKER", "name"],
+        ["css=#USER_BIRTHDATE_PICKER", "css:finder"],
+        ["xpath=//input[@id='USER_BIRTHDATE_PICKER']", "xpath:attributes"],
+        ["xpath=//form[@id='personalForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17e4afab-9335-4b86-ac7e-d5a0e5207b3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=USER_BIRTHDATE_PICKER",
+      "targets": [
+        ["id=USER_BIRTHDATE_PICKER", "id"],
+        ["name=USER_BIRTHDATE_PICKER", "name"],
+        ["css=#USER_BIRTHDATE_PICKER", "css:finder"],
+        ["xpath=//input[@id='USER_BIRTHDATE_PICKER']", "xpath:attributes"],
+        ["xpath=//form[@id='personalForm']/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "30/11/1981"
+    }, {
+      "id": "c7441a44-f944-426e-8892-bdba11569509",
+      "comment": "",
+      "command": "click",
+      "target": "id=CUSTOMER_EMAIL",
+      "targets": [
+        ["id=CUSTOMER_EMAIL", "id"],
+        ["name=CUSTOMER_EMAIL", "name"],
+        ["css=#CUSTOMER_EMAIL", "css:finder"],
+        ["xpath=//input[@id='CUSTOMER_EMAIL']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div[4]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a619ab06-8d49-49e8-9705-c363c88db410",
+      "comment": "",
+      "command": "type",
+      "target": "id=CUSTOMER_EMAIL",
+      "targets": [
+        ["id=CUSTOMER_EMAIL", "id"],
+        ["name=CUSTOMER_EMAIL", "name"],
+        ["css=#CUSTOMER_EMAIL", "css:finder"],
+        ["xpath=//input[@id='CUSTOMER_EMAIL']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div[4]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "test1145@hackney.gov.uk"
+    }, {
+      "id": "7b2a6d43-1c62-4304-bec8-5d109e57b99c",
+      "comment": "",
+      "command": "type",
+      "target": "id=CUSTOMER_EMAIL_REPEAT",
+      "targets": [
+        ["id=CUSTOMER_EMAIL_REPEAT", "id"],
+        ["name=CUSTOMER_EMAIL_REPEAT", "name"],
+        ["css=#CUSTOMER_EMAIL_REPEAT", "css:finder"],
+        ["xpath=//input[@id='CUSTOMER_EMAIL_REPEAT']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div[4]/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "test1145@hackney.gov.uk"
+    }, {
+      "id": "ba0d7067-a411-4378-b2b6-fe9aff236ff8",
+      "comment": "",
+      "command": "type",
+      "target": "id=PASSWORD",
+      "targets": [
+        ["id=PASSWORD", "id"],
+        ["name=PASSWORD", "name"],
+        ["css=#PASSWORD", "css:finder"],
+        ["xpath=//input[@id='PASSWORD']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div[4]/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Arsenal12"
+    }, {
+      "id": "93a72daa-dd05-40cd-a48f-79a9d3cc32e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=CONFIRM_PASSWORD",
+      "targets": [
+        ["id=CONFIRM_PASSWORD", "id"],
+        ["name=CONFIRM_PASSWORD", "name"],
+        ["css=#CONFIRM_PASSWORD", "css:finder"],
+        ["xpath=//input[@id='CONFIRM_PASSWORD']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div[4]/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Arsenal12"
+    }, {
+      "id": "48654e49-59dc-460e-a7a1-aeeabf325ab5",
+      "comment": "",
+      "command": "click",
+      "target": "id=cfrmDetails",
+      "targets": [
+        ["id=cfrmDetails", "id"],
+        ["linkText=Continue to vehicle details", "linkText"],
+        ["name=cfrmDetails", "name"],
+        ["css=#cfrmDetails", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue to vehicle details')]", "xpath:link"],
+        ["xpath=//a[@id='cfrmDetails']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[2]/div[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue to vehicle details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bf5b241-0bc9-46db-9dd0-19f569e7cbac",
+      "comment": "",
+      "command": "click",
+      "target": "id=agree",
+      "targets": [
+        ["id=agree", "id"],
+        ["css=#agree", "css:finder"],
+        ["xpath=//input[@id='agree']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div[2]/div[2]/div/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05d445ce-6c40-47d4-bbf1-acf94673d392",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitEvidenceForm",
+      "targets": [
+        ["id=submitEvidenceForm", "id"],
+        ["linkText=Continue to vehicle details", "linkText"],
+        ["css=#submitEvidenceForm", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue to vehicle details')]", "xpath:link"],
+        ["xpath=//a[@id='submitEvidenceForm']", "xpath:attributes"],
+        ["xpath=//div[@id='continueVehicle']/div/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue to vehicle details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f1acd09-4022-4da9-bb00-bfe862903a76",
+      "comment": "",
+      "command": "click",
+      "target": "id=VRM",
+      "targets": [
+        ["id=VRM", "id"],
+        ["css=#VRM", "css:finder"],
+        ["xpath=//input[@id='VRM']", "xpath:attributes"],
+        ["xpath=//div[@id='vrmLookup']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78413026-a453-4402-ab40-21cd29ccb30e",
+      "comment": "",
+      "command": "type",
+      "target": "id=VRM",
+      "targets": [
+        ["id=VRM", "id"],
+        ["css=#VRM", "css:finder"],
+        ["xpath=//input[@id='VRM']", "xpath:attributes"],
+        ["xpath=//div[@id='vrmLookup']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ov08hlo"
+    }, {
+      "id": "ea03bf9e-7447-49c8-b006-373182223b24",
+      "comment": "",
+      "command": "click",
+      "target": "id=getVrmDetails",
+      "targets": [
+        ["id=getVrmDetails", "id"],
+        ["linkText=Look up", "linkText"],
+        ["css=#getVrmDetails", "css:finder"],
+        ["xpath=//a[contains(text(),'Look up')]", "xpath:link"],
+        ["xpath=//a[@id='getVrmDetails']", "xpath:attributes"],
+        ["xpath=//div[@id='vrmLookup']/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Look up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5210d88-c384-41de-858f-98c343bd57dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=form:nth-child(1) > input:nth-child(2)",
+      "targets": [
+        ["css=form:nth-child(1) > input:nth-child(2)", "css:finder"],
+        ["xpath=(//input[@name='selfCert'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='continueButton']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56d31fb2-b30d-4daa-a796-281e4ec6cc45",
+      "comment": "",
+      "command": "click",
+      "target": "id=continue",
+      "targets": [
+        ["id=continue", "id"],
+        ["linkText=Continue to duration and cost", "linkText"],
+        ["css=#continue", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue to duration and cost')]", "xpath:link"],
+        ["xpath=//a[@id='continue']", "xpath:attributes"],
+        ["xpath=//div[@id='continueButton']/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[3]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue to duration and cost')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "205d6729-eff3-4f69-8d1c-72777df7bb88",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Continue",
+      "targets": [
+        ["linkText=Continue", "linkText"],
+        ["css=.loginBtn", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue')]", "xpath:link"],
+        ["xpath=//div[@id='left-section']/div[2]/div/div[5]/a", "xpath:idRelative"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05c51739-c0e3-4df1-a726-8dacc15690cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=reserveMoreVisitorPermitNo",
+      "targets": [
+        ["id=reserveMoreVisitorPermitNo", "id"],
+        ["css=#reserveMoreVisitorPermitNo", "css:finder"],
+        ["xpath=//input[@id='reserveMoreVisitorPermitNo']", "xpath:attributes"],
+        ["xpath=//form[@id='visitorPermitForm']/div[2]/label[2]/input", "xpath:idRelative"],
+        ["xpath=//label[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec695c67-c299-4718-918c-0b2315ba2520",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=acceptTermsCond1", "id"],
+        ["name=acceptTermsCond1", "name"],
+        ["css=#acceptTermsCond1", "css:finder"],
+        ["xpath=//input[@id='acceptTermsCond1']", "xpath:attributes"],
+        ["xpath=//form[@id='acceptTermsCondForm']/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c60cafbe-4537-4887-885a-c9d3744a7323",
+      "comment": "",
+      "command": "click",
+      "target": "id=acceptTermsCond1",
+      "targets": [
+        ["id=acceptTermsCond", "id"],
+        ["linkText=Continue to delivery options", "linkText"],
+        ["css=#acceptTermsCond", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue to delivery options')]", "xpath:link"],
+        ["xpath=//a[@id='acceptTermsCond']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div/div[2]/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue to delivery options')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c81f2a34-40d4-437b-a4eb-1a3128f38e93",
+      "comment": "",
+      "command": "click",
+      "target": "id=acceptTermsCond",
+      "targets": [
+        ["linkText=Continue to payment", "linkText"],
+        ["css=.loginBtn", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue to payment')]", "xpath:link"],
+        ["xpath=//div[@id='left-section']/div[3]/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue to payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43b85eae-e31e-4d9c-af04-809eddf5fc17",
+      "comment": "",
+      "command": "click",
+      "target": "id=paymentBtn",
+      "targets": [
+        ["id=paymentBtn", "id"],
+        ["linkText=Make payment", "linkText"],
+        ["css=#paymentBtn", "css:finder"],
+        ["xpath=//a[contains(text(),'Make payment')]", "xpath:link"],
+        ["xpath=//a[@id='paymentBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div[2]/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Make payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0be1a16-463e-46c5-9fd3-54c4fd663e00",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Continue to payment",
+      "targets": [
+        ["linkText=Continue to payment", "linkText"],
+        ["css=.loginBtn", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue to payment')]", "xpath:link"],
+        ["xpath=//div[@id='left-section']/div[3]/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0);')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue to payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85778dab-5683-4441-869d-955eeb074c2e",
+      "comment": "",
+      "command": "click",
+      "target": "id=paymentBtn",
+      "targets": [
+        ["id=paymentBtn", "id"],
+        ["linkText=Make payment", "linkText"],
+        ["css=#paymentBtn", "css:finder"],
+        ["xpath=//a[contains(text(),'Make payment')]", "xpath:link"],
+        ["xpath=//a[@id='paymentBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='left-section']/div[2]/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Make payment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ceaa4031-ea10-4e6a-8b99-f354c291e1d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=dropdownMenuCards",
+      "targets": [
+        ["id=dropdownMenuCards", "id"],
+        ["css=#dropdownMenuCards", "css:finder"],
+        ["xpath=//button[@id='dropdownMenuCards']", "xpath:attributes"],
+        ["xpath=//div[@id='testmode-buttons']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Populate Card ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8924e8d4-4309-4c70-9df2-4a0ef630aed6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Visa Debit",
+      "targets": [
+        ["linkText=Visa Debit", "linkText"],
+        ["css=#popCard > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Visa Debit')]", "xpath:link"],
+        ["xpath=//ul[@id='popCard']/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[13]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Visa Debit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "719bb662-b15a-440c-8c25-30901a1cf23a",
+      "comment": "",
+      "command": "click",
+      "target": "id=process",
       "targets": [],
       "value": ""
-    }, {
-      "id": "011a2690-e387-4a85-8bf8-9fc501b31b3a",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Apply or renew now",
-      "targets": [
-        ["linkText=Apply or renew now", "linkText"],
-        ["css=p:nth-child(6) > .fasc-button", "css:finder"],
-        ["xpath=//a[contains(text(),'Apply or renew now')]", "xpath:link"],
-        ["xpath=//div[@id='top']/div/div/div[3]/div[2]/p[3]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://permits.hackney.gov.uk/')]", "xpath:href"],
-        ["xpath=//p[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Apply or renew now')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "f61dc9d1-7a9c-4d98-a08e-67cf6bebef60",
-      "comment": "",
-      "command": "click",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "4c08a70e-d085-40d0-abdd-b0eb7c1d9eaf",
-      "comment": "",
-      "command": "click",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "2a365d8c-58f9-4b4b-9990-97814dcc27e9",
-      "comment": "",
-      "command": "doubleClick",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "c6c0bc59-f149-4dca-9b49-7201c34e075c",
-      "comment": "",
-      "command": "click",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "19d49121-7562-4ffe-a5d3-023cab387137",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": "Welcome to Hackney's parking permit system"
-    }, {
-      "id": "b7fc0fb5-4c79-4d8c-89f2-7d0093adf716",
-      "comment": "",
-      "command": "click",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "08bdecd6-9b04-47a6-a723-d718237f6ba7",
-      "comment": "",
-      "command": "click",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "1bc6a336-8fe1-4a09-abe5-77d7119d5ce5",
-      "comment": "",
-      "command": "doubleClick",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "5d278a8e-e7ba-48bc-8dd3-89d5aafb4fa9",
-      "comment": "",
-      "command": "click",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "36fe33b6-ca4b-4454-8485-be1d1006b009",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=h2:nth-child(3)",
-      "targets": [
-        ["css=h2:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='container']/h2", "xpath:idRelative"],
-        ["xpath=//h2", "xpath:position"]
-      ],
-      "value": "Welcome to Hackney's parking permit system"
     }]
   }],
   "suites": [{
-    "id": "8a7b65dd-e39f-4bbb-a5fc-82b4c992bf4d",
+    "id": "d2ef047a-7df4-4141-bf6c-1b171ece0ec8",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["38b80569-c8d3-45d2-9dc9-b511522d626b"]
+    "tests": ["3780e742-ac5e-4a96-bb3f-f58e69e54f98"]
   }],
-  "urls": ["https://hackney.gov.uk/menu/#parking"],
+  "urls": ["https://hackney-staging-permits.farthestgate.co.uk/"],
   "plugins": []
 }
